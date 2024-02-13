@@ -359,7 +359,7 @@ const App = () => {
           <FlatList
             data={connectedDevices}
             renderItem={({ item }) => <View style={{ padding: 10, backgroundColor: 'white', elevation: 5, margin: 10, borderRadius: 10 }}>
-              <Text style={{ textAlign: 'center', fontWeight: 'bold', fontSize: 16 }}>{item.name}</Text>
+              <Text style={{ textAlign: 'center', fontWeight: 'bold', fontSize: 16 }}>{item?.name}</Text>
               <View style={{ flexDirection: 'row', justifyContent: 'space-around' }}>
                 <TouchableOpacity
                   activeOpacity={0.5}
